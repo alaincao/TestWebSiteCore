@@ -39,5 +39,31 @@
 				}
 			}
 		},
+		{
+			"type": "gulp",
+			"task": "site.js",
+			"problemMatcher": [
+				"$gulp-tsc"
+			]
+		},
+		{
+			"type": "gulp",
+			"task": "site.min.js",
+			"problemMatcher": [
+				"$gulp-tsc"
+			]
+		},
+		{
+			"type": "gulp",
+			"task": "default",
+			"problemMatcher": [
+				"$gulp-tsc"
+			]
+		},
+		{
+			"type": "gulp",
+			"task": "clean",
+			"problemMatcher": []
+		}
 	]
 }
