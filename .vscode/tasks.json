@@ -1,0 +1,43 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "dotnet build",
+			"group": "build",
+			"problemMatcher": "$msCompile",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"${workspaceFolder}/TestWebSiteCore.csproj"
+			]
+		},
+		{
+			"label": "dotnet run",
+			"group": "test",
+			"type": "shell",
+			"problemMatcher": [],
+			"command": "dotnet run",
+			"args": [],
+			"options": {
+				"env": {
+					"ASPNETCORE_ENVIRONMENT": "Development",
+					"ASPNETCORE_URLS": "http://0.0.0.0:5001"
+				}
+			}
+		},
+		{
+			"label": "dotnet run --no-build",
+			"group": "test",
+			"type": "shell",
+			"problemMatcher": [],
+			"command": "dotnet run --no-build",
+			"args": [],
+			"options": {
+				"env": {
+					"ASPNETCORE_ENVIRONMENT": "Development",
+					"ASPNETCORE_URLS": "http://0.0.0.0:5001"
+				}
+			}
+		},
+	]
+}
