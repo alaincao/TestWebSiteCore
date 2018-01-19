@@ -1,3 +1,7 @@
+@using Microsoft.AspNetCore.Http;
+@{
+	var sessionID = Context.Session.GetString( TestWebSiteCore.Startup.SessionKey );
+}
 <html>
 <head>
 	<title>Home</title>
@@ -12,7 +16,8 @@
 
 </head>
 <body>
-	This is Home/Index.cshtml
+	This is Home/Index.cshtml<br/>
+	SessionID: '@sessionID'
 
 <script type="text/javascript">
 	// Function defined in Index.ts
