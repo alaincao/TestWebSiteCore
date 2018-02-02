@@ -17,11 +17,20 @@
 </head>
 <body>
 	This is Home/Index.cshtml<br/>
-	SessionID: '@sessionID'
+	SessionID: '@sessionID'<br/>
+	<br/>
+	Status of connection to server is: <span id="client-status"></span><br/>
+	<br/>
+	Server time (Method 1): <span id="server-time-get"></span><br/>
+	<br/>
+	<button id="btn-test-push">Ask the server to push the time 10 times</button><br/>
+	Server time (Method 2): <span id="server-time-push">Click the button above</span><br/>
+	<br/>
+	<button id="btn-test-crash">Test server-side exception</button>
 
 <script type="text/javascript">
 	// Function defined in Index.ts
-	home_index_init();
+	home_index_init( @Html.Raw(ViewBag.ClientParameters) );
 </script>
 
 </body>
