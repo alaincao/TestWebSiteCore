@@ -21,7 +21,7 @@ gulp.task( 'clean', function()
 				] );
 } );
 
-// Compile typescript files (using tsify+browserify) into './Scripts/interweb.js'
+// Compile typescript files (using tsify+browserify) into './wwwroot/js/xxx.js'
 gulp.task( 'site.js', function(){ return buildInterwebJs('site.js', false); })
 gulp.task( 'site.min.js', function(){ return buildInterwebJs('site.min.js', true); })  // <== NB: Not used but contains additional compilation checks => Leaving it ...
 function buildInterwebJs(fileName, releaseMode)
