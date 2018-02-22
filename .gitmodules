@@ -1,0 +1,3 @@
+[submodule "CommonLibs"]
+	path = CommonLibs
+	url = https://github.com/alaincao/CommonLibs.git
